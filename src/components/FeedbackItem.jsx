@@ -25,7 +25,11 @@ function FeedbackItem({ item }) {
           <FaEdit
             role="button"
             className="edit"
-            onClick={() => editFeedback(item)}
+            // onClick={() => editFeedback(item)}
+            onClick={() => {
+              editFeedback(item)
+              window.scrollTo(0, 0)
+            }}
           />
           <FaTimes
             role="button"
